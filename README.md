@@ -4,27 +4,32 @@ Um programa em C que simula o estágio inicial do jogo Batalha Naval, posicionan
 
 ## Funcionalidades
 
-- Tabuleiro 10×10 com colunas identificadas por letras (A-J) e linhas por números (1-10)
-- Posicionamento automático de:
+- Tabuleiro 10×10 com sistema de coordenadas (A-J, 1-10)
+- Posicionamento automático de 4 navios:
   - 1 navio horizontal (tamanho 3)
   - 1 navio vertical (tamanho 3)
-- Visualização clara do tabuleiro com marcação de navios
+  - 1 navio diagonal principal (\) (tamanho 3)
+  - 1 navio diagonal secundária (/) (tamanho 3)
+- Sistema avançado de validação:
+  - Verificação de limites do tabuleiro
+  - Prevenção de sobreposição de navios
+  - Suporte a posicionamento diagonal
 
 ## Exemplo de Uso
 
 ```
 Tabuleiro de Batalha Naval:
-   A B C D E F G H I J
- 1 0 0 0 0 0 0 0 0 0 0 
- 2 0 0 3 3 3 0 0 0 0 0 
- 3 0 0 0 0 0 0 0 0 0 0 
- 4 0 0 0 0 0 0 0 0 0 0 
- 5 0 0 0 0 0 0 0 0 0 0 
- 6 0 0 0 0 0 0 0 3 0 0 
- 7 0 0 0 0 0 0 0 3 0 0 
- 8 0 0 0 0 0 0 0 3 0 0 
- 9 0 0 0 0 0 0 0 0 0 0 
-10 0 0 0 0 0 0 0 0 0 0 
+  A B C D E F G H I J
+1 0 0 0 0 0 0 0 0 0 0
+2 0 3 3 3 0 0 0 3 0 0
+3 0 0 0 0 0 0 3 0 0 0
+4 0 0 0 0 0 3 0 0 0 0
+5 0 0 0 0 3 0 0 0 0 0
+6 0 0 3 0 0 0 0 0 0 0
+7 0 0 0 3 0 0 0 0 0 0
+8 0 0 0 0 3 0 0 0 0 0
+9 0 0 0 0 0 0 0 0 0 0
+10 0 0 0 0 0 0 0 0 0 0
 ```
 
 ## Como Compilar e Executar
