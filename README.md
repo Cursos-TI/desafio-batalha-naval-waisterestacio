@@ -4,16 +4,50 @@ Um programa em C que simula o estágio inicial do jogo Batalha Naval, posicionan
 
 ## Funcionalidades
 
-- Tabuleiro 10×10 com sistema de coordenadas (A-J, 1-10)
-- Posicionamento automático de 4 navios:
-  - 1 navio horizontal (tamanho 3)
-  - 1 navio vertical (tamanho 3)
-  - 1 navio diagonal principal (\) (tamanho 3)
-  - 1 navio diagonal secundária (/) (tamanho 3)
-- Sistema avançado de validação:
-  - Verificação de limites do tabuleiro
-  - Prevenção de sobreposição de navios
-  - Suporte a posicionamento diagonal
+**1. Sistema Básico de Tabuleiro**
+  - Tabuleiro 10x10: Representação clássica do jogo Batalha Naval com coordenadas (A-J para colunas, 1-10 para linhas)
+
+  - Sistema de Posicionamento:
+
+    - Navios posicionados automaticamente no início do jogo
+
+    - Dois navios padrão (um horizontal e um vertical) de tamanho 3
+
+**2. Habilidades Especiais com Áreas de Efeito**
+O jogo implementa três tipos distintos de habilidades especiais:
+
+**a) Habilidade em Cone**
+  - Formato: Triangular, expandindo-se para baixo a partir do ponto de origem
+
+  - Características:
+
+    - Efeito se amplia progressivamente
+
+    - Ideal para ataques direcionais
+
+    - Representação matricial calculada dinamicamente
+
+**b) Habilidade em Cruz**
+  - Formato: Linhas vertical e horizontal que se cruzam no centro
+
+  - Características:
+
+    - Efeito em formato de "+"
+
+    - Cobre uma linha reta em duas direções
+
+    - Área de efeito simétrica
+
+**c) Habilidade em Octaedro (Losango)**
+  - Formato: Diamante centrado no ponto médio
+
+  - Características:
+
+    - Efeito radial equilibrado
+
+    - Cobertura uniforme em todas as direções diagonais
+
+    - Área de efeito compacta mas poderosa
 
 ## Exemplo de saída
 
